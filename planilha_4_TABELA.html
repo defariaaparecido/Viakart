@@ -7,15 +7,22 @@
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: Arial, sans-serif; font-size: 12px; background: #f5f5f5; }
-.cabecalho { color: white; padding: 12px 20px; }
+.cabecalho { color: white; padding: 12px 20px; position: sticky; top: 0; z-index: 30;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
 .cabecalho h1 { font-size: 18px; }
-.nav-abas { display: flex; flex-wrap: wrap; background: #222; padding: 6px 10px; gap: 4px; }
+.nav-abas { display: flex; flex-wrap: wrap; background: #222; padding: 6px 10px; gap: 4px;
+  position: sticky; top: 46px; z-index: 29; box-shadow: 0 2px 4px rgba(0,0,0,0.15); }
 .aba { display: inline-block; padding: 6px 14px; border-radius: 4px 4px 0 0;
   color: white; text-decoration: none; font-size: 12px; font-weight: bold;
   background-color: var(--cor-aba); opacity: 0.75; transition: opacity 0.2s; }
 .aba:hover { opacity: 1; }
 .aba.ativa { opacity: 1; border-bottom: 3px solid white; }
-.container-tabela { overflow-x: auto; padding: 16px; }
+.container-tabela { overflow-x: scroll; padding: 16px; }
+.container-tabela::-webkit-scrollbar { height: 14px; }
+.container-tabela::-webkit-scrollbar-track { background: #ddd; border-radius: 7px; }
+.container-tabela::-webkit-scrollbar-thumb { background: #888; border-radius: 7px; border: 3px solid #ddd; }
+.container-tabela::-webkit-scrollbar-thumb:hover { background: #555; }
+.container-tabela { scrollbar-width: auto; scrollbar-color: #888 #ddd; }
 table { border-collapse: collapse; min-width: 600px; background: white;
   box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
 td { border: 1px solid #ccc; padding: 4px 8px; font-size: 11px;
@@ -31,9 +38,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
 <nav class="nav-abas">
   <a href="planilha_1_CAMP_PILOTO_EVOL.html" class="aba" style="--cor-aba:#4472C4;">CAMP PILOTO EVOL</a>
   <a href="planilha_2_TROCA_KART.html" class="aba" style="--cor-aba:#4472C4;">TROCA KART</a>
-  <a href="planilha_3_PRESENAS.html" class="aba" style="--cor-aba:#4472C4;">PRESENÇAS</a>
+  <a href="planilha_3_PRESENAS.html" class="aba" style="--cor-aba:#4472C4;">PRESENÃ‡AS</a>
   <a href="planilha_4_TABELA.html" class="aba ativa" style="--cor-aba:#4472C4;">TABELA</a>
-  <a href="planilha_5_Classificao_Geral.html" class="aba" style="--cor-aba:#4472C4;">Classificação Geral</a>
+  <a href="planilha_5_Classificao_Geral.html" class="aba" style="--cor-aba:#4472C4;">ClassificaÃ§Ã£o Geral</a>
   <a href="planilha_6_Vazia.html" class="aba" style="--cor-aba:#4472C4;">Vazia</a>
 </nav>
 <div class="container-tabela">
@@ -94,18 +101,18 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
   <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
   <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">1ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">2ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">3ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">4ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">5ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">6ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">7ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">8ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">9ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">10ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">11ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">12ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">1Âª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">2Âª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">3Âª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">4Âª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">5Âª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">6Âª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">7Âª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">8Âª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">9Âª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">10Âª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">11Âª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">12Âª etapa</td>
 </tr>
 <tr>
   <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
@@ -127,54 +134,54 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
 <tr>
   <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
   <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:center;">Nome do (a) Piloto (a)</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontuação Geral</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PontuaÃ§Ã£o Geral</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">PosiÃ§Ã£o</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">BÃ´nus</td>
 </tr>
 <tr>
   <td style="background-color:transparent;color:#000000;text-align:center;">1</td>
@@ -282,7 +289,7 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
 </tr>
 <tr>
   <td style="background-color:transparent;color:#000000;text-align:center;">3</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Álvaro Paiva</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Ãlvaro Paiva</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">42</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">5</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">11</td>
@@ -958,7 +965,7 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
 </tr>
 <tr>
   <td style="background-color:transparent;color:#000000;text-align:center;">16</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Marco Sant’anna</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Marco Santâ€™anna</td>
   <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">8</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">19</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">1</td>
