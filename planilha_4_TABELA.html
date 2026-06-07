@@ -7,11 +7,12 @@
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: Arial, sans-serif; font-size: 12px; background: #f5f5f5; }
-.cabecalho { color: white; padding: 12px 20px; position: sticky; top: 0; z-index: 30;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+.cabecalho { color: white; padding: 0 20px; height: 48px; display: flex; align-items: center;
+  position: sticky; top: 0; z-index: 30; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
 .cabecalho h1 { font-size: 18px; }
-.nav-abas { display: flex; flex-wrap: wrap; background: #222; padding: 6px 10px; gap: 4px;
-  position: sticky; top: 46px; z-index: 29; box-shadow: 0 2px 4px rgba(0,0,0,0.15); }
+.nav-abas { display: flex; flex-wrap: nowrap; overflow-x: auto; align-items: center;
+  background: #222; padding: 0 10px; gap: 4px; height: 40px;
+  position: sticky; top: 48px; z-index: 29; box-shadow: 0 2px 4px rgba(0,0,0,0.15); }
 .aba { display: inline-block; padding: 6px 14px; border-radius: 4px 4px 0 0;
   color: white; text-decoration: none; font-size: 12px; font-weight: bold;
   background-color: var(--cor-aba); opacity: 0.75; transition: opacity 0.2s; }
@@ -46,147 +47,147 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
 <div class="container-tabela">
 <table>
 <tr>
-  <td style="background-color:#FFFF00;color:#000000;font-weight:bold;text-align:center;">2026</td>
-  <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">OK</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">OK</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">OK</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">OK</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">OK</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
+  <td style="background-color:#FFFF00;color:#000000;font-weight:bold;text-align:center;position:sticky;top:88px;left:0px;z-index:20;">2026</td>
+  <td style="background-color:#ffffff;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;left:60px;z-index:20;">&nbsp;</td>
+  <td style="background-color:#ffffff;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;left:207px;z-index:20;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">OK</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">OK</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">OK</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">OK</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">OK</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:88px;z-index:10;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">1ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">2ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">3ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">4ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">5ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">6ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">7ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">8ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">9ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">10ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">11ª etapa</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">12ª etapa</td>
+  <td style="background-color:#ffffff;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;left:0px;z-index:20;">&nbsp;</td>
+  <td style="background-color:#ffffff;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;left:60px;z-index:20;">&nbsp;</td>
+  <td style="background-color:#ffffff;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;left:207px;z-index:20;">&nbsp;</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">1ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">2ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">3ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">4ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">5ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">6ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">7ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">8ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">9ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">10ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">11ª etapa</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:109px;z-index:10;">12ª etapa</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">08/02/2026 dom</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">12/03/2026 qui</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">16/04/2026 qui</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">30/04/2026 qui</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">14/05/2026 qui</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
+  <td style="background-color:#ffffff;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;left:0px;z-index:20;">&nbsp;</td>
+  <td style="background-color:#ffffff;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;left:60px;z-index:20;">&nbsp;</td>
+  <td style="background-color:#ffffff;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;left:207px;z-index:20;">&nbsp;</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">08/02/2026 dom</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">12/03/2026 qui</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">16/04/2026 qui</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">30/04/2026 qui</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">14/05/2026 qui</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">&nbsp;</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">&nbsp;</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">&nbsp;</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">&nbsp;</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">&nbsp;</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">&nbsp;</td>
+  <td colspan="4" style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:130px;z-index:10;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#FFFFFF;font-weight:bold;text-align:center;">&nbsp;</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:center;">Nome do (a) Piloto (a)</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontuação Geral</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Penalidade</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Posição</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Pontos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">Bônus</td>
+  <td style="background-color:#ffffff;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;left:0px;z-index:20;">&nbsp;</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;left:60px;z-index:20;">Nome do (a) Piloto (a)</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;left:207px;z-index:20;">Pontuação Geral</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Penalidade</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Penalidade</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Penalidade</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Penalidade</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Penalidade</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Penalidade</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Penalidade</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Penalidade</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Penalidade</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Penalidade</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Penalidade</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Posição</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Pontos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;top:151px;z-index:10;">Bônus</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">1</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Alexandre Jannotti</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">47</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">1</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Alexandre Jannotti</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">47</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">13</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">3</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -236,9 +237,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">2</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Alexandre Melillo</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">72</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">2</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Alexandre Melillo</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">72</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">11</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">5</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -288,9 +289,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">3</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Álvaro Paiva</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">42</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">3</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Álvaro Paiva</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">42</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">5</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">11</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -340,9 +341,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">4</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Carlos Eduardo</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">44</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">4</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Carlos Eduardo</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">44</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">18</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">1</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -392,9 +393,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">5</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Carlos Sampaio</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">46</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">5</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Carlos Sampaio</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">46</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">6</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">10</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -444,9 +445,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">6</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Claudio Junqueira</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">5</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">6</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Claudio Junqueira</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">5</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">16</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">1</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -496,9 +497,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">7</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Euclides Almeida</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">15</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">7</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Euclides Almeida</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">15</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">7</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">9</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -548,9 +549,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">8</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Guilherme Janot</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">39</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">8</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Guilherme Janot</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">39</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">10</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">6</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -600,9 +601,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">9</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Jarbas Reis</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">30</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">9</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Jarbas Reis</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">30</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">15</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">1</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -652,9 +653,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">10</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Jean Paul</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">31</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">10</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Jean Paul</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">31</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">9</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">7</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -704,9 +705,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">11</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Marcelo Campos</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">39</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">11</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Marcelo Campos</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">39</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">2</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">17</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -756,9 +757,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">12</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Marcelo Clemente</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">5</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">12</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Marcelo Clemente</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">5</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">3</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">15</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -808,9 +809,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">13</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Marcelo Mizrahy</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">67</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">13</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Marcelo Mizrahy</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">67</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">1</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">20</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">1</td>
@@ -860,9 +861,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">14</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Marcelo Sant'anna</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">44</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">14</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Marcelo Sant'anna</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">44</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">17</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">1</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -912,9 +913,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">15</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Marcelo Surerus</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">40</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">15</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Marcelo Surerus</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">40</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">12</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">4</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -964,9 +965,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">16</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Marco Sant’anna</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">8</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">16</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Marco Sant’anna</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">8</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">19</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">1</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1016,9 +1017,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">17</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Roberto Maia</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">26</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">17</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Roberto Maia</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">26</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">4</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">13</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1068,9 +1069,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">18</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Rodrigo Mercadante</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">2</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">18</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Rodrigo Mercadante</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">2</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">14</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">2</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1120,9 +1121,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">19</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">Wilson Cristofani</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">21</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">19</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">Wilson Cristofani</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">21</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">8</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">8</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1172,9 +1173,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">20</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">20</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1224,9 +1225,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">21</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">21</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1276,9 +1277,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">22</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">22</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1328,9 +1329,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">23</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">23</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1380,9 +1381,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">24</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">24</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1432,9 +1433,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">25</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">25</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1484,9 +1485,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">26</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">26</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1536,9 +1537,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">27</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">27</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1588,9 +1589,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">28</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">28</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1640,9 +1641,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">29</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">29</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1692,9 +1693,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">30</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">30</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1744,9 +1745,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">31</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">31</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1796,9 +1797,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">32</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">32</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1848,9 +1849,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">33</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">33</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1900,9 +1901,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">34</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">34</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -1952,9 +1953,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">35</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">35</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -2004,9 +2005,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">36</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">36</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -2056,9 +2057,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">37</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">37</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -2108,9 +2109,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">38</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">38</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -2160,9 +2161,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">39</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">39</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -2212,9 +2213,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">40</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">40</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -2264,9 +2265,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">41</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">41</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -2316,9 +2317,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">42</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">42</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -2368,9 +2369,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">43</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">43</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -2420,9 +2421,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">44</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">44</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">0</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
@@ -2472,9 +2473,9 @@ footer { text-align: center; padding: 10px; color: #888; font-size: 10px; margin
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">&nbsp;</td>
 </tr>
 <tr>
-  <td style="background-color:transparent;color:#000000;text-align:center;">45</td>
-  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;">&nbsp;</td>
-  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;">0</td>
+  <td style="background-color:#ffffff;color:#000000;text-align:center;position:sticky;left:0px;z-index:10;">45</td>
+  <td style="background-color:#A40F38;color:#FFFFFF;font-weight:bold;text-align:left;position:sticky;left:60px;z-index:10;">&nbsp;</td>
+  <td style="background-color:#CB0441;color:#FFFFFF;font-weight:bold;text-align:center;position:sticky;left:207px;z-index:10;">0</td>
   <td style="background-color:#FFFFCC;color:#000000;text-align:center;">&nbsp;</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">XXX</td>
   <td style="background-color:#D8D8D8;color:#000000;text-align:center;">XXX</td>
